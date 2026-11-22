@@ -207,7 +207,7 @@ function Run-FullAuditAndRepair($autoRepair = $false) {
     }
 
     # 6. Check Local Bridge Port 48999
-    Append-Log "`n[6/6] ត្រួតពិនិត្យច្រកតភ្ជាប់ Local IPC Bridge (Port 48999)..." ([System.Drawing.Color]::FromArgb(100, 200, 255))
+    Append-Log "`n[6/8] ត្រួតពិនិត្យច្រកតភ្ជាប់ Local IPC Bridge (Port 48999)..." ([System.Drawing.Color]::FromArgb(100, 200, 255))
     try {
         $testListener = New-Object System.Net.HttpListener
         $testListener.Prefixes.Add("http://127.0.0.1:48999/")
@@ -217,6 +217,51 @@ function Run-FullAuditAndRepair($autoRepair = $false) {
         Append-Log "  ✓ Port 48999: ច្រកទំនេរ រួចរាល់សម្រាប់ដំណើរការ" ([System.Drawing.Color]::FromArgb(52, 211, 153))
     } catch {
         Append-Log "  ℹ️ Port 48999: កំពុងដំណើរការដោយ SunoChrome ឬ Service សកម្មស្រាប់ (Active)" ([System.Drawing.Color]::FromArgb(196, 181, 253))
+    }
+
+    # 7. Check Desktop Shortcuts
+    Append-Log "`n[7/8] ត្រួតពិនិត្យផ្លូវកាត់លើ Desktop (Desktop Shortcuts Audit)..." ([System.Drawing.Color]::FromArgb(100, 200, 255))
+    $desktop = [System.Environment]::GetFolderPath("Desktop")
+    $shortcuts = @(
+        "Suno Studio Central Hub.lnk", "Suno System Doctor.lnk", "Suno Audio Studio.lnk",
+        "Suno Prompt Studio.lnk", "Suno Backup Manager.lnk", "Suno GitHub Sync.lnk",
+        "Suno Audio Converter.lnk", "Suno Rhyme Studio.lnk", "Suno Quick HUD.lnk",
+        "Suno AI Studio (Google Chrome).lnk", "Suno AI Composer.lnk", "Suno AI Music.lnk"
+    )
+    $wsh = New-Object -ComObject WScript.Shell
+    $icon = Join-Path $sunoDir "app.ico"
+    foreach ($sc in $shortcuts) {
+        $scFile = Join-Path $desktop $sc
+        if (Test-Path $scFile) {
+            Append-Log "  ✓ $($sc): មានវត្តមានលើ Desktop" ([System.Drawing.Color]::FromArgb(52, 211, 153))
+        } else {
+            Append-Log "  ⚠️ បាត់ផ្លូវកាត់: $($sc)" ([System.Drawing.Color]::FromArgb(251, 146, 60))
+            $issueCount++
+            if ($autoRepair) {
+                $base = $sc.Replace(".lnk", "").Replace(" ", "")
+                $launcher = Join-Path $sunoDir "$base`Launcher.vbs"
+                if (-not (Test-Path $launcher)) {
+                    $launcher = Join-Path $sunoDir "$base.bat"
+                }
+                if (Test-Path $launcher) {
+                    $link = $wsh.CreateShortcut($scFile)
+                    $link.TargetPath = $launcher
+                    $link.WorkingDirectory = $sunoDir
+                    if (Test-Path $icon) { $link.IconLocation = "$icon,0" }
+                    $link.Save()
+                    Append-Log "    ➔ [ជួសជុលស្វ័យប្រវត្តិ] បានបង្កើតផ្លូវកាត់ $sc ឡើងវិញ!" ([System.Drawing.Color]::FromArgb(34, 197, 94))
+                }
+            }
+        }
+    }
+
+    # 8. Check GitHub Cloud Status
+    Append-Log "`n[8/8] ត្រួតពិនិត្យស្ថានភាព Git & GitHub Cloud (vanndatree98/suno-ai-studio-pro)..." ([System.Drawing.Color]::FromArgb(100, 200, 255))
+    if (Test-Path (Join-Path $sunoDir ".git")) {
+        $branch = (git -C $sunoDir branch --show-current 2>$null)
+        Append-Log "  ✓ Git Repository: Active (Branch: $branch)" ([System.Drawing.Color]::FromArgb(52, 211, 153))
+    } else {
+        Append-Log "  ℹ️ Git Repository: មិនទាន់បាន Initialize" ([System.Drawing.Color]::FromArgb(196, 181, 253))
     }
 
     # Summary

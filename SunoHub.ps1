@@ -305,6 +305,13 @@ Add-AppCard `
     "🧪 បើក Prompt Studio" ([System.Drawing.Color]::FromArgb(147, 51, 234)) `
     "SunoPromptStudio.bat"
 
+Add-AppCard `
+    "✍️ Suno Rhyme & Lyrics Lab" `
+    "រៀបចំរចនាសម្ព័ន្ធទំនុកច្រៀង បញ្ចូល Metatags ([Chorus], [Drop]) និងផ្ទៀងផ្ទាត់ចង្វាក់ពាក្យជួន។" `
+    "LYRICS LAB" ([System.Drawing.Color]::FromArgb(52, 211, 153)) `
+    "✍️ បើក Rhyme Studio" ([System.Drawing.Color]::FromArgb(16, 185, 129)) `
+    "SunoRhymeStudio.bat"
+
 # --- SECTION 3: MEDIA & PLAYLIST MANAGEMENT ---
 Add-CategoryHeader "គ្រប់គ្រង និងទាញយកចម្រៀង (Media & Downloads)" "🎵" ([System.Drawing.Color]::FromArgb(52, 211, 153))
 
@@ -329,6 +336,13 @@ Add-AppCard `
     "📦 បើក Playlist Downloader" ([System.Drawing.Color]::FromArgb(217, 119, 6)) `
     "SunoPlaylistDownloader.bat"
 
+Add-AppCard `
+    "🎛️ Suno Audio Converter" `
+    "បំប្លែងទម្រង់ឯកសារ (WAV, MP3, FLAC), កាត់សំឡេងស្ងាត់ និង Normalize Loudness តាម FFmpeg។" `
+    "MASTERING" ([System.Drawing.Color]::FromArgb(255, 94, 58)) `
+    "🎛️ បើក Audio Converter" ([System.Drawing.Color]::FromArgb(225, 29, 72)) `
+    "SunoAudioConverter.bat"
+
 # --- SECTION 4: SYSTEM UTILITIES & DATA ---
 Add-CategoryHeader "ឧបករណ៍ថែទាំ និងថតផ្ទុកទិន្នន័យ (System Utilities)" "🛠️" ([System.Drawing.Color]::FromArgb(168, 85, 247))
 
@@ -352,6 +366,13 @@ Add-AppCard `
     "GITHUB CLOUD" ([System.Drawing.Color]::FromArgb(168, 85, 247)) `
     "🐙 បើក GitHub Sync" ([System.Drawing.Color]::FromArgb(147, 51, 234)) `
     "SunoGitHubSync.bat"
+
+Add-AppCard `
+    "⚡ Suno Quick HUD Widget" `
+    "ផ្ទាំង Dashboard អណ្តែតលើអេក្រង់កុំព្យូទ័រ (Always-on-Top) សម្រាប់បញ្ជាកិច្ចការលឿនៗ។" `
+    "DESKTOP HUD" ([System.Drawing.Color]::FromArgb(56, 189, 248)) `
+    "⚡ បើក Quick HUD" ([System.Drawing.Color]::FromArgb(37, 99, 235)) `
+    "SunoQuickHUD.bat"
 
 Add-AppCard `
     "📂 ថតទិន្នន័យ Downloads" `

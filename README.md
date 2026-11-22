@@ -21,15 +21,19 @@
 * **🎨 Suno Theme Selector (`SunoThemeSelector.ps1`)**៖ ផ្លាស់ប្តូរពណ៌ Theme កម្មវិធី Suno (Dark Studio, Cyberpunk, Midnight Neon, Sunset, Forest) សម្រាប់ផ្ទាំងបញ្ជា។
 * **🤖 Gemini AI Title Generator (`GeminiTitleGenerator.ps1`)**៖ បង្កើតចំណងជើងបទចម្រៀងពីរោះៗ ភាសាខ្មែរ/អន្តរជាតិ រៀបចំជា Playlist ដោយប្រើប្រាស់ Gemini AI ទំនើប។
 * **🧪 Suno Prompt Laboratory (`SunoPromptStudio.ps1`)**៖ មន្ទីរពិសោធន៍បង្កើត Music Style Prompt តាមរចនាបថតន្ត្រី ឧបករណ៍ បរិយាកាស និងគុណភាពផលិត។
+* **✍️ Suno Rhyme & Lyrics Lab (`SunoRhymeStudio.ps1`)**៖ រៀបចំរចនាសម្ព័ន្ធទំនុកច្រៀង បញ្ចូល Suno Metatags (`[Chorus]`, `[Drop]`, `[Bridge]`) និងផ្ទៀងផ្ទាត់ចង្វាក់ពាក្យជួន។
 
 ### 🎵 ៣. គ្រប់គ្រង និងទាញយកចម្រៀង (Media & Downloads)
 * **🎵 Suno Audio Studio (`SunoAudioStudio.ps1`)**៖ ស្ទូឌីយោចាក់ស្តាប់បទចម្រៀង (Native WPF MediaPlayer) កែប្រែព័ត៌មានបទ (Title/Artist) និងរៀបចំបញ្ជីបទចម្រៀង។
+* **🎛️ Suno Audio Converter (`SunoAudioConverter.ps1`)**៖ បំប្លែងទម្រង់ឯកសារចម្រៀង (WAV, MP3, FLAC, AAC), កាត់បន្ថយសំឡេងស្ងាត់ដើម/ចុង និង Normalize Loudness តាមស្តង់ដារ Streaming (-14 LUFS) ដោយប្រើ FFmpeg។
 * **📥 Suno WAV Batch Downloader (`SunoDownloader.ps1`)**៖ ទាញយកឯកសារចម្រៀង WAV/MP3 គុណភាពខ្ពស់បំផុតពី Suno ដោយផ្ទាល់។
 * **📦 Suno Playlist Downloader (`SunoPlaylistDownloader.ps1`)**៖ ទាញយកចម្រៀងទាំងមូលពី Playlist ខ្ចប់ជាកញ្ចប់ ZIP និងទាញយកដោយស្វ័យប្រវត្តិតាមជួរ Queue។
 
 ### 🛠️ ៤. ឧបករណ៍ថែទាំ និងសុវត្ថិភាពប្រព័ន្ធ (System Utilities)
-* **🩺 Suno System Doctor (`SunoDoctor.ps1`)**៖ ស្កេនពិនិត្យប្រព័ន្ធ រកមើលចំណុចខ្វះខាត និងជួសជុលស្វ័យប្រវត្តិកម្រិតខ្ពស់ (Self-Healing Engine)។
+* **🩺 Suno System Doctor (`SunoDoctor.ps1`)**៖ ស្កេនពិនិត្យប្រព័ន្ធ រកមើលចំណុចខ្វះខាត និងជួសជុលស្វ័យប្រវត្តិកម្រិតខ្ពស់ ៨ ចំណុចគ្រឹះ (Self-Healing Engine)។
 * **📦 Suno Backup Manager (`SunoBackupManager.ps1`)**៖ បង្កើតកញ្ចប់ Backup និងស្ដារទិន្នន័យចល័ត Data ទាំងមូល (Sessions, Logins, Downloads) ដោយចុចតែ ១ ដង។
+* **⚡ Suno Quick HUD Widget (`SunoQuickHUD.ps1`)**៖ ផ្ទាំង Dashboard អណ្តែតលើអេក្រង់កុំព្យូទ័រ (Always-On-Top Desktop Widget) សម្រាប់បញ្ជាកិច្ចការលឿនៗ។
+* **🐙 Suno GitHub Cloud Sync (`SunoGitHubSync.ps1`)**៖ ធ្វើសមកាលកម្មកូដ និងគម្រោងទាំងមូលឡើងទៅកាន់ GitHub Repository ដោយចុចតែ ១ ដង។
 
 ---
 
