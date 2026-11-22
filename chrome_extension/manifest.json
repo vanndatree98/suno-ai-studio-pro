@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Suno AI Studio Pro",
+  "version": "2.0.0",
+  "description": "Native Suno AI Studio Pro Engine for Google Chrome",
+  "content_scripts": [
+    {
+      "matches": ["https://suno.com/*"],
+      "js": ["studio_bridge.js", "studio.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "host_permissions": [
+    "https://suno.com/*",
+    "http://127.0.0.1:48999/*",
+    "http://localhost:48999/*"
+  ]
+}

@@ -1,0 +1,42 @@
+# ==============================================================================
+# Git Ignore - Suno AI Studio Pro Suite
+# Strictly excludes private credentials, user data, cache, and downloads
+# ==============================================================================
+
+# Private User Data & Sessions (NEVER COMMIT)
+Data/
+Backups/
+UserData/
+ChromeUserData/
+ElectronUserData/
+Downloads/
+
+# Private API Keys & Credentials
+gemini_config.json
+.env
+.env.local
+
+# Browser Caches
+**/Cache/
+**/Code Cache/
+**/GPUCache/
+
+# Large Installer Packages (>100MB)
+installer/
+*.exe.block
+dist/
+
+# Log Files & Temp
+*.log
+*.tmp
+*.download
+downloader.log
+electron_app.log
+suno_app.log
+app.log
+
+# Operating System Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+$RECYCLE.BIN/

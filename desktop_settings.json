@@ -1,0 +1,5 @@
+{
+  "runOnStartup": true,
+  "closeToTray": true,
+  "startMinimized": false
+}

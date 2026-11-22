@@ -1,0 +1,7 @@
+{
+  "autoFillSuno": true,
+  "customLanguage": "ហ្វីលីពីន",
+  "apiKey": "YOUR_GEMINI_API_KEY_HERE",
+  "model": "gemini-3.5-flash",
+  "language": "km"
+}
