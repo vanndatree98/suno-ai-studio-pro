@@ -312,6 +312,13 @@ Add-AppCard `
     "✍️ បើក Rhyme Studio" ([System.Drawing.Color]::FromArgb(16, 185, 129)) `
     "SunoRhymeStudio.bat"
 
+Add-AppCard `
+    "💿 Suno Album Architect" `
+    "បង្កើតគំនិតអាល់ប៊ុមពេញលេញ (Tracklist Prompts) និងបញ្ជូនផលិតស្វ័យប្រវត្តិតាមជួរ Queue។" `
+    "ALBUM LAB" ([System.Drawing.Color]::FromArgb(255, 94, 58)) `
+    "💿 បើក Album Studio" ([System.Drawing.Color]::FromArgb(217, 119, 6)) `
+    "SunoAlbumStudio.bat"
+
 # --- SECTION 3: MEDIA & PLAYLIST MANAGEMENT ---
 Add-CategoryHeader "គ្រប់គ្រង និងទាញយកចម្រៀង (Media & Downloads)" "🎵" ([System.Drawing.Color]::FromArgb(52, 211, 153))
 
@@ -373,6 +380,13 @@ Add-AppCard `
     "DESKTOP HUD" ([System.Drawing.Color]::FromArgb(56, 189, 248)) `
     "⚡ បើក Quick HUD" ([System.Drawing.Color]::FromArgb(37, 99, 235)) `
     "SunoQuickHUD.bat"
+
+Add-AppCard `
+    "🌐 Suno Network Doctor" `
+    "ត្រួតពិនិត្យល្បឿន Ping, Cloudflare Turnstile Reachability និងសម្អាត DNS Cache។" `
+    "NETWORK" ([System.Drawing.Color]::FromArgb(56, 189, 248)) `
+    "🌐 ស្កេនបណ្តាញ Network" ([System.Drawing.Color]::FromArgb(37, 99, 235)) `
+    "SunoNetworkDoctor.bat"
 
 Add-AppCard `
     "📂 ថតទិន្នន័យ Downloads" `

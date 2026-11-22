@@ -22,6 +22,7 @@
 * **🤖 Gemini AI Title Generator (`GeminiTitleGenerator.ps1`)**៖ បង្កើតចំណងជើងបទចម្រៀងពីរោះៗ ភាសាខ្មែរ/អន្តរជាតិ រៀបចំជា Playlist ដោយប្រើប្រាស់ Gemini AI ទំនើប។
 * **🧪 Suno Prompt Laboratory (`SunoPromptStudio.ps1`)**៖ មន្ទីរពិសោធន៍បង្កើត Music Style Prompt តាមរចនាបថតន្ត្រី ឧបករណ៍ បរិយាកាស និងគុណភាពផលិត។
 * **✍️ Suno Rhyme & Lyrics Lab (`SunoRhymeStudio.ps1`)**៖ រៀបចំរចនាសម្ព័ន្ធទំនុកច្រៀង បញ្ចូល Suno Metatags (`[Chorus]`, `[Drop]`, `[Bridge]`) និងផ្ទៀងផ្ទាត់ចង្វាក់ពាក្យជួន។
+* **💿 Suno Album Architect (`SunoAlbumStudio.ps1`)**៖ បង្កើតគំនិតអាល់ប៊ុមពេញលេញ (Tracklist Concept, Styles) និងបញ្ជូនផលិតស្វ័យប្រវត្តិតាមជួរ Queue។
 
 ### 🎵 ៣. គ្រប់គ្រង និងទាញយកចម្រៀង (Media & Downloads)
 * **🎵 Suno Audio Studio (`SunoAudioStudio.ps1`)**៖ ស្ទូឌីយោចាក់ស្តាប់បទចម្រៀង (Native WPF MediaPlayer) កែប្រែព័ត៌មានបទ (Title/Artist) និងរៀបចំបញ្ជីបទចម្រៀង។
@@ -33,6 +34,7 @@
 * **🩺 Suno System Doctor (`SunoDoctor.ps1`)**៖ ស្កេនពិនិត្យប្រព័ន្ធ រកមើលចំណុចខ្វះខាត និងជួសជុលស្វ័យប្រវត្តិកម្រិតខ្ពស់ ៨ ចំណុចគ្រឹះ (Self-Healing Engine)។
 * **📦 Suno Backup Manager (`SunoBackupManager.ps1`)**៖ បង្កើតកញ្ចប់ Backup និងស្ដារទិន្នន័យចល័ត Data ទាំងមូល (Sessions, Logins, Downloads) ដោយចុចតែ ១ ដង។
 * **⚡ Suno Quick HUD Widget (`SunoQuickHUD.ps1`)**៖ ផ្ទាំង Dashboard អណ្តែតលើអេក្រង់កុំព្យូទ័រ (Always-On-Top Desktop Widget) សម្រាប់បញ្ជាកិច្ចការលឿនៗ។
+* **🌐 Suno Network Doctor (`SunoNetworkDoctor.ps1`)**៖ ត្រួតពិនិត្យល្បឿន Ping, Cloudflare Turnstile Reachability និងសម្អាត DNS Cache។
 * **🐙 Suno GitHub Cloud Sync (`SunoGitHubSync.ps1`)**៖ ធ្វើសមកាលកម្មកូដ និងគម្រោងទាំងមូលឡើងទៅកាន់ GitHub Repository ដោយចុចតែ ១ ដង។
 
 ---
